@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hexo-GitHub搭建个人博客]]></title>
+    <url>%2F2019%2F06%2F12%2FHexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[写在前面本人是在Mac系统下进行的搭建。经过朋友对Hexo建站的一波展示以及对Next主题的颜值入的坑，然后在某一天的下午，开启了这个伟大的项目——我的个人博客建设 Hexo 是一个快速、简洁且高效的博客框架。 适合用来做个人博客，记录一些文字类的东西。 环境准备安装以下 GitNode.jsnvm 检验是否安装成功node -vgit --version出现了版本号就说明安装成功，安装成功之后开始安装Hexo Hexo安装Hexo打开终端输入以下命令sudo npm install -g hexo-cli然后按提示输入管理员密码 新建目录新建一个文件夹用来放博客工程（如Hexo_Blog )，在终端输入以下（博客路径通过拖动文件夹到终端）cd /Users/apple/Documents/Hexo_bloghero init安装成功后目录下面会出现一堆文件 启动和预览启动hexocd /Users/apple/Documents/Hexo_bloghero s启动成功会出现以下代码INFO Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.在浏览器输入链接就可以预览 部署到GitHub将网站部署到GitHub，创建GitHub Pages仓库，将项目生成的文件放到仓库里，之后就可以通过链接访问博客了。 设置Git的姓名和邮箱更改配置文件的后面的git参数git config --global user.name &quot;Firstname Lastname&quot;git config --global user.email &quot;your_email@example.com&quot; 添加SSH Key在终端输入命令，后面输入自己的邮箱地址ssh-keygen -t rsa -C &quot;your_email@example.com&quot;出现像长方形一样的符号就说明生成成功了打开生成的id_rsa.pub，复制里面的内容，将它添加到GitHub里面的SSH keys配置完成，就可以成功通过Hexo命令，成功将网页部署到GitHub了。 NexT主题因为Hexo的默认主题不太好看，我们可以应用极简的NexT主题。 安装Next主题定位到blog目录，在终端输入以下cd /Users/apple/Documents/Hexo_bloggit clone https://github.com/iissnan/hexo-theme-next themes/next 启用主题打开站点配置文件，也就是blog目录下的_config.yml.将theme后面改成nexttheme: next验证主题启动Hexo开启调试模式hero s --debug Next]]></content>
+      <categories>
+        <category>New Things</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
